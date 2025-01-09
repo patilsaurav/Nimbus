@@ -147,7 +147,7 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -171,18 +171,19 @@ h6 {
 .logo-img {
   height: auto;
   max-width: 100%;
-  width: 160px; /* Set a default width */
+  width: 120px; /* Set a default width */
 }
+
 
 /* Default navbar height */
 #header {
-  height: 120px; /* Initial height */
+  height: 80px; /* Initial height */
   transition: all 0.3s ease; /* Smooth transition */
 }
 
 /* Reduced navbar height when scrolled */
 .scrolled {
-  height: 40px; /* Height when scrolled */
+  height: 10px; /* Height when scrolled */
 }
 
 /* Optional: Adjust the logo size when scrolled */
@@ -190,7 +191,35 @@ h6 {
   height: 100px; /* Reduce logo size */
   width: 100px;
 }
+/* Mobile responsiveness: Adjust navbar for smaller screens */
+@media (max-width: 768px) {
+  #header {
+    height: 70px; /* Slightly reduced height for tablets */
+  }
 
+  .logo-img {
+    width: 100px; /* Adjust logo size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    height: 60px; /* Reduced height for small screens */
+  }
+
+  .logo-img {
+    width: 90px; /* Adjust logo size for mobile */
+  }
+}
+/* Change the color of the hamburger menu (3 lines) */
+.mobile-nav-toggle {
+  color: black; /* Change the hamburger icon color to black */
+}
+
+/* Optional: Change the color when the mobile menu is open (active state) */
+.mobile-nav-toggle.active {
+  color: black; /* Ensure it's black even when active */
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -329,7 +358,7 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: black;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -1242,6 +1271,28 @@ section,
     color: var(--accent-color);
   }
 }
+
+.logo-img {
+  max-width: 100%;       /* Ensures the logo never exceeds its container width */
+  height: auto;
+  margin-top: 0px;          /* Maintains aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    width: 120px;        /* Sets a smaller width for mobile devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 50px;        /* Further reduces size for very small screens */
+  }
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
