@@ -1286,7 +1286,7 @@ section,
 
 @media (max-width: 480px) {
   .logo-img {
-    width: 50px;        /* Further reduces size for very small screens */
+    width: 60px;        /* Further reduces size for very small screens */
   }
 }
 
