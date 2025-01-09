@@ -31,7 +31,23 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+<!-- Right-click disable -->
+<script>
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    alert("Right-click is disabled for security reasons.");
+  });
+</script>
 
+<!-- Keyboard shortcut disable -->
+<script>
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+      e.preventDefault();
+      alert("Inspect is disabled!");
+    }
+  });
+</script>
   
 </head>
 
@@ -592,7 +608,12 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    console.log = function () {};
+    console.error = function () {};
+    console.warn = function () {};
+  </script>
+  
 </body>
 
 </html>
