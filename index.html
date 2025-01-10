@@ -31,24 +31,24 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-<!-- Right-click disable -->
-<script>
+  <!-- Right-click disable -->
+  <!-- <script>
   document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
     alert("Right-click is disabled for security reasons.");
   });
-</script>
+</script> -->
 
-<!-- Keyboard shortcut disable -->
-<script>
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-      e.preventDefault();
-      alert("Inspect is disabled!");
-    }
-  });
-</script>
-  
+  <!-- Keyboard shortcut disable -->
+  <script>
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        e.preventDefault();
+        alert("Inspect is disabled!");
+      }
+    });
+  </script>
+
 </head>
 
 <body class="index-page">
@@ -265,127 +265,116 @@
     </section><!-- /Services Section -->
 
     <!-- Product Section -->
-    <section id="products" class="portfolio section">
+   <!-- Product Section -->
+<section id="products" class="portfolio section">
 
-      <!-- Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Products</h2>
+    <p>What we've done</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <!-- Food Products Section -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Products</h2>
-        <p>What we've done</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/Towel/Towel HD3.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Towel 1</h4>
-                <p>SoftNest Plush Bath Essentials</p>
-                <a href="assets/img/Towel/Towel HD3.jpeg" title="Product 1" data-gallery="portfolio-gallery-product"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details-towel.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/turmeric/turmeric 1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Turmeric 1</h4>
-                <p>GoldenGlow Natural Turmeric Essentials</p>
-                <a href="assets/img/turmeric/turmeric 1.jpeg" title="Product 1" data-gallery="portfolio-gallery-product"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="product-details-turmeric.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/Corn/corn grits.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Corn Grits 1</h4>
-                <p>Golden Harvest Corn Grits Delight</p>
-                <a href="assets/img/Corn/corn grits.webp" title="Branding 1" data-gallery="portfolio-gallery-branding"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="product-details-corn.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/turmeric/turmeric 1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Turmeric 2</h4>
-                <p>HaldiPure Organic Turmeric Powder</p>
-                <a href="assets/img/turmeric/turmeric 1.jpeg" title="App 2" data-gallery="portfolio-gallery-product"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="product-details-turmeric.html" More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/turmeric/turmeric 9.16.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Turmeric 3</h4>
-                <p>Nature’s Gold Healing Turmeric</p>
-                <a href="assets/img/turmeric/turmeric 9.16.jpg" title="Product 2"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="product-details-turmeric.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/Corn/Corn grits2.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Corn Grits 2</h4>
-                <p>Purely Grits Smooth Corn Goodness</p>
-                <a href="assets/img/Corn/Corn grits2.webp" title="Branding 2" data-gallery="portfolio-gallery-branding"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="product-details-corn.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/Towel/Towel.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Towel 2</h4>
-                <p>AquaPlush Ultra Absorbent Towels</p>
-                <a href="assets/img/Towel/Towel.webp" title="Product 1" data-gallery="portfolio-gallery-product"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details-towel.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/Towel/towel 16.9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Towel 3</h4>
-                <p>VelvaWrap Premium Cotton Towels</p>
-                <a href="assets/img/Towel/towel 16.9.jpg" title="Product 3" data-gallery="portfolio-gallery-product"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details-towel.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+        <h2></h2>
+        <p>Food Products </p>
       </div>
 
-    </section><!-- /Product Section -->
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- Food Product Item 1 -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="assets/img/turmeric/turmeric details 2.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Turmeric 2</h4>
+            <p>HaldiPure Organic Turmeric Powder</p>
+            <a href="assets/img/turmeric/Turmeric bowl.jpeg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="product-details-turmeric.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Food Product Item 3 -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="assets/img/Corn/Corn grits2.webp" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Corn Grits 1</h4>
+            <p>Golden Harvest Corn Grits Delight</p>
+            <a href="assets/img/Corn/Corn grits2.webp" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="product-details-corn.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Food Product Item 2 -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="assets/img/turmeric/Turmeric bowl.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Turmeric 2</h4>
+            <p>HaldiPure Organic Turmeric Powder</p>
+            <a href="assets/img/turmeric/Turmeric bowl.jpeg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="product-details-turmeric.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        
+
+      </div><!-- End Food Products Section -->
+<br>
+<br>
+      <!-- Towel Products Section -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2></h2>
+        <p>Towel Products </p>
+      </div>
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- Towel Product Item 1 -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="assets/img/Towel/Towel HD3.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Towel 1</h4>
+            <p>SoftNest Plush Bath Essentials</p>
+            <a href="assets/img/Towel/Towel HD3.jpeg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details-towel.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Towel Product Item 2 -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="assets/img/Towel/mat towel2.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Towel 2</h4>
+            <p>AquaPlush Ultra Absorbent Towels</p>
+            <a href="assets/img/Towel/mat towel2.jpeg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details-towel.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Towel Product Item 3 -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="assets/img/Towel/Towel HD2.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Towel 3</h4>
+            <p>VelvaWrap Premium Cotton Towels</p>
+            <a href="assets/img/Towel/Towel HD2.jpeg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details-towel.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+      </div><!-- End Towel Products Section -->
+
+    </div><!-- End Portfolio Container -->
+
+  </div>
+
+</section><!-- /Product Section -->
+
+<!-- /Product Section -->
+
     <hr class="faint-line">
     <!-- Contact Section -->
     <!-- Contact Section -->
@@ -405,7 +394,7 @@
               <div>
                 <h3>Address</h3>
                 <p>Sahyadrinagar near Datta Temple</p>
-            <p>Vishrambag Sangli, Maharashtra</p>
+                <p>Vishrambag Sangli, Maharashtra</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -421,7 +410,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <p>nimbusimpreesa@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
           </div>
@@ -465,58 +454,58 @@
     <!-- Include EmailJS Script -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<script>
-  (function () {
-    emailjs.init("f8xa2WuvYqSlPr9R7"); // Replace with your EmailJS user ID
-  })();
+    <script>
+      (function () {
+        emailjs.init("f8xa2WuvYqSlPr9R7"); // Replace with your EmailJS user ID
+      })();
 
-  function sendEmail(event) {
-    event.preventDefault();
+      function sendEmail(event) {
+        event.preventDefault();
 
-    // Get form values
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var subject = document.getElementById('subject').value;
-    var message = document.getElementById('message').value;
+        // Get form values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
 
-    // Send email using EmailJS
-    emailjs.send("service_vnwa8ho", "template_9xidpbp", {
-      from_name: name,
-      from_email: email,
-      subject: subject,
-      message: message
-    })
-    .then(function (response) {
-      console.log('SUCCESS', response);
+        // Send email using EmailJS
+        emailjs.send("service_vnwa8ho", "template_9xidpbp", {
+          from_name: name,
+          from_email: email,
+          subject: subject,
+          message: message
+        })
+          .then(function (response) {
+            console.log('SUCCESS', response);
 
-      // Show success message with animation
-      var sentMessage = document.querySelector('.sent-message');
-      sentMessage.classList.add('d-block');
+            // Show success message with animation
+            var sentMessage = document.querySelector('.sent-message');
+            sentMessage.classList.add('d-block');
 
-      // Hide success message after 5 seconds with animation
-      setTimeout(function () {
-        sentMessage.classList.remove('d-block');
-      }, 5000);
+            // Hide success message after 5 seconds with animation
+            setTimeout(function () {
+              sentMessage.classList.remove('d-block');
+            }, 5000);
 
-      // Reset the form
-      document.getElementById('contact-form').reset();
-    }, function (error) {
-      console.error('FAILED', error);
+            // Reset the form
+            document.getElementById('contact-form').reset();
+          }, function (error) {
+            console.error('FAILED', error);
 
-      // Show error message with animation
-      var errorMessage = document.querySelector('.error-message');
-      errorMessage.innerText = "Oops! Something went wrong. Please try again.";
-      errorMessage.classList.add('d-block');
+            // Show error message with animation
+            var errorMessage = document.querySelector('.error-message');
+            errorMessage.innerText = "Oops! Something went wrong. Please try again.";
+            errorMessage.classList.add('d-block');
 
-      // Hide error message after 5 seconds with animation
-      setTimeout(function () {
-        errorMessage.classList.remove('d-block');
-      }, 5000);
-    });
-  }
-</script>
+            // Hide error message after 5 seconds with animation
+            setTimeout(function () {
+              errorMessage.classList.remove('d-block');
+            }, 5000);
+          });
+      }
+    </script>
 
-    
+
 
   </main>
 
@@ -536,7 +525,7 @@
             <p>Sahyadrinagar near Datta Temple</p>
             <p>Vishrambag Sangli, Maharashtra</p>
             <p class="mt-3"><strong>Phone:</strong> <span>1234567890</span></p>
-            <p><strong>Email:</strong> <span>info@gmail.com</span></p>
+            <p><strong>Email:</strong> <span>nimbusimpreesa@gmail</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -566,18 +555,9 @@
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Our Nimbus Impressa Business Newsletter</h4>
-          <p>Subscribe to our newsletter and stay updated with the latest insights, news, and special offers from Nimbus
-            Impressa Business!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form">
-              <input type="email" name="email" placeholder="Enter your email">
-              <input type="submit" value="Subscribe">
-            </div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you for joining Nimbus Impressa!
-            </div>
-          </form>
+          <p>Get the latest business trends, special updates, and exclusive offers from Nimbus Impreesa. Join our
+            community and stay ahead with insightful news and opportunities!</p>
+
         </div>
 
 
@@ -585,8 +565,11 @@
     </div>
 
     <div class="container copyright text-center mt-4">
+      <span>@ 2025</span> <strong class="px-1 sitename">Nimbus Impreesa</strong> <span>All Rights Reserved.</span>
+
       <div class="credits">
-       </div>
+
+      </div>
     </div>
 
   </footer>
@@ -609,11 +592,11 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-    console.log = function () {};
-    console.error = function () {};
-    console.warn = function () {};
+    console.log = function () { };
+    console.error = function () { };
+    console.warn = function () { };
   </script>
-  
+
 </body>
 
 </html>
