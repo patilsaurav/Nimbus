@@ -1349,11 +1349,16 @@ section,
   position: absolute;
   left: 12px;
   right: 12px;
-  bottom: -100%;
+  top: -100%; /* Start from above the image */
   z-index: 3;
   transition: all ease-in-out 0.5s;
   background: color-mix(in srgb, var(--surface-color), transparent 10%);
   padding: 15px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  top: 0; /* Slide down to the top of the image */
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -1390,10 +1395,6 @@ section,
   font-size: 28px;
 }
 
-.portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-  bottom: 0;
-}
 
 /*--------------------------------------------------------------
 # Testimonials Section
