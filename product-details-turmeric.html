@@ -349,88 +349,92 @@
         </section><!-- /Portfolio Details Section -->
 
     </main>
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
+     <!-- Contact Section -->
+     <section id="contact" class="contact section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Contact Us</p>
+          <h2>Contact</h2>
+          <p>Contact Us</p>
         </div><!-- End Section Title -->
-
+  
         <div class="container" data-aos="fade" data-aos-delay="100">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-4">
-                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                        <i class="bi bi-geo-alt flex-shrink-0"></i>
-                        <div>
-                            <h3>Address</h3>
-                            <p>Sahyadrinagar near Datta Temple</p>
-                            <p>Vishrambag Sangli, Maharashtra</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                        <i class="bi bi-telephone flex-shrink-0"></i>
-                        <div>
-                            <h3>Call Us</h3>
-                            <p>+1 5589 55488 55</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                        <i class="bi bi-envelope flex-shrink-0"></i>
-                        <div>
-                            <h3>Email Us</h3>
-                            <p>nimbusimpreesa@gmail.com</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
+          <div class="row gy-4">
+            <!-- Address, Phone, and Email Info -->
+            <div class="col-lg-4">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <!-- Address Icon with Tooltip -->
+                <a href="https://www.google.com/maps/place/Vishrambag,+Sangli,+Maharashtra/data=!4m2!3m1!1s0x3bc122816730d721:0x988d8a633d7e420f?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI0LjQ5LjgYACCenQoqfiw5NDIzMTc5OSw5NDI0MjU4Niw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyODIwNCw5NDIyOTgzOSw0NzA4NDM5Myw5NDIxMzIwMEICSU4%3D">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                </a>
+                <div>
+                  <h3>Address</h3>
+                  <p>Sahyadrinagar near Datta Temple</p>
+                  <p>Vishrambag Sangli, Maharashtra</p>
                 </div>
-
-                <div class="col-lg-8">
-                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="row gy-4">
-
-                            <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                            </div>
-
-                            <div class="col-md-6 ">
-                                <input type="email" class="form-control" name="email" placeholder="Your Email"
-                                    required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject"
-                                    required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Message"
-                                    required=""></textarea>
-                            </div>
-
-                            <div class="col-md-12 text-center">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                <button type="submit">Send Message</button>
-                            </div>
-
-                        </div>
-                    </form>
-                </div><!-- End Contact Form -->
-
+              </div><!-- End Info Item -->
+            
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <!-- Phone Icon with Tooltip -->
+                <a href="tel:91+9226828540" title="Click to call us">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                </a>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>91+9226828540</p>
+                </div>
+              </div><!-- End Info Item -->
+            
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <!-- Email Icon with Tooltip -->
+                <a href="mailto:nimbusimpreesa@gmail.com" title="Click to email us">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                </a>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>nimbusimpreesa@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
             </div>
-
+            
+            
+            
+  
+            <!-- Contact Form -->
+            <div class="col-lg-8">
+              <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200"
+                onsubmit="sendEmail(event)">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+  
+                  <div class="col-md-6">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required="">
+                  </div>
+  
+                  <div class="col-md-12">
+                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required="">
+                  </div>
+  
+                  <div class="col-md-12">
+                    <textarea name="message" id="message" class="form-control" rows="6" placeholder="Message"
+                      required=""></textarea>
+                  </div>
+  
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+  
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div><!-- End Contact Form -->
+          </div>
         </div>
-
-    </section><!-- /Contact Section -->
+      </section>
+  <!-- /Contact Section -->
 
     <footer id="footer" class="footer dark-background">
 
@@ -446,7 +450,7 @@
                     <div class="footer-contact pt-3">
                         <p>Sahyadrinagar near Datta Temple</p>
                         <p>Vishrambag Sangli, Maharashtra</p>
-                        <p class="mt-3"><strong>Phone:</strong> <span>1234567890</span></p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>9226828540</span></p>
                         <p><strong>Email:</strong> <span>nimbusimpreesa@gmail.com</span></p>
                     </div>
                     <div class="social-links d-flex mt-4">
