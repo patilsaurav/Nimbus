@@ -1295,6 +1295,15 @@ section,
 .btn-next {
   right: 10px; /* Position for "next" button */
 }
+/* tiranga */
+.tricolor-text {
+  background: linear-gradient(to right, #FF9933, #FFFFFF, #138808); /* Orange, White, Green */
+  -webkit-background-clip: text; /* Safari, Chrome */
+  -moz-background-clip: text; /* Firefox (if supported) */
+  background-clip: text; /* Standard */
+  color: transparent;
+  font-weight: bold;
+}
 
 /* Ensure buttons are not obstructing on small screens */
 @media (max-width: 768px) {
