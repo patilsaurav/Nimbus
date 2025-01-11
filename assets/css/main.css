@@ -1257,6 +1257,56 @@ section,
 .carousel-item .btn-next:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
+/* Custom CSS for carousel navigation buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: 10px; /* Adjust the left position */
+}
+
+.carousel-control-next {
+  right: 10px; /* Adjust the right position */
+}
+
+/* Make the custom buttons larger for better visibility */
+.btn-prev, .btn-next {
+  font-size: 2rem; /* Increase size */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White color for icons */
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.btn-prev {
+  left: 10px; /* Position for "prev" button */
+}
+
+.btn-next {
+  right: 10px; /* Position for "next" button */
+}
+
+/* Ensure buttons are not obstructing on small screens */
+@media (max-width: 768px) {
+  .btn-prev, .btn-next {
+    font-size: 1.5rem; /* Smaller button size on smaller screens */
+    padding: 8px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    display: none; /* Hide default arrows on small screens */
+  }
+}
 
 /*--------------------------------------------------------------
 # Services Section
