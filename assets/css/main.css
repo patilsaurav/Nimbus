@@ -1214,6 +1214,49 @@ section,
 .call-to-action .cta-btn:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
+/* Thumbnails for preview buttons */
+.carousel-preview-buttons .preview-thumbnail {
+  width: 100px;
+  height: 60px;
+  margin: 0 10px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.carousel-preview-buttons .preview-thumbnail:hover {
+  border-color: #007bff;
+}
+
+/* Side navigation buttons on images */
+.carousel-item .btn-prev, 
+.carousel-item .btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.carousel-item .btn-prev {
+  left: 10px;
+}
+
+.carousel-item .btn-next {
+  right: 10px;
+}
+
+.carousel-item .btn-prev:hover, 
+.carousel-item .btn-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
 /*--------------------------------------------------------------
 # Services Section
