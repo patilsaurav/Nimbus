@@ -1701,6 +1701,19 @@ section,
   padding: 1px 0 3px 0;
 }
 
+.faint-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 80%; /* Line ki width */
+  margin: 20px auto; /* Centering aur spacing */
+  background-color: transparent; /* Background ko transparent rakhte hain */
+}
+
+@media (max-width: 768px) {
+  .faint-line {
+    width: 90%; /* Chhoti screens ke liye width ka adjustment */
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact Section
