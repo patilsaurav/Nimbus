@@ -44,6 +44,7 @@
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#products">Products</a></li>
                     <li><a href="index.html#services">Services</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
@@ -53,7 +54,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <main id="products" class="main">
         <!-- Page Title -->
         <div class="page-title ">
             <div class="container position-relative">
@@ -69,7 +70,7 @@
         </div><!-- End Page Title -->
 
         <!-- Portfolio Details Section -->
-        <section id="portfolio-details" class="portfolio-details section">
+        <section class="portfolio-details section">
 
             <div class="container" data-aos="fade-up">
 
@@ -329,157 +330,167 @@
             </section><!-- End Portfolio Section -->
         </section><!-- /Portfolio Details Section -->
         <hr class="faint-line">
-         <!-- Contact Section -->
-     <section id="contact" class="contact section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </div><!-- End Section Title -->
-  
-        <div class="container" data-aos="fade" data-aos-delay="100">
-          <div class="row gy-4">
-            <!-- Address, Phone, and Email Info -->
-            <div class="col-lg-4">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <!-- Address Icon with Tooltip -->
-                <a href="https://www.google.com/maps/place/Vishrambag,+Sangli,+Maharashtra/data=!4m2!3m1!1s0x3bc122816730d721:0x988d8a633d7e420f?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI0LjQ5LjgYACCenQoqfiw5NDIzMTc5OSw5NDI0MjU4Niw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyODIwNCw5NDIyOTgzOSw0NzA4NDM5Myw5NDIxMzIwMEICSU4%3D">
-                  <i class="bi bi-geo-alt flex-shrink-0"></i>
-                </a>
-                <div>
-                  <h3>Address</h3>
-                  <p>Sahyadrinagar near Datta Temple</p>
-                  <p>Vishrambag Sangli, Maharashtra</p>
-                </div>
-              </div><!-- End Info Item -->
-            
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <!-- Phone Icon with Tooltip -->
-                <a href="tel:91+9226828540" title="Click to call us">
-                  <i class="bi bi-telephone flex-shrink-0"></i>
-                </a>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>91+9226828540</p>
-                </div>
-              </div><!-- End Info Item -->
-            
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <!-- Email Icon with Tooltip -->
-                <a href="mailto:nimbusimpreesa@gmail.com" title="Click to email us">
-                  <i class="bi bi-envelope flex-shrink-0"></i>
-                </a>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>nimbusimpreesa@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-            </div>
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contact</h2>
+                <p>Contact Us</p>
+            </div><!-- End Section Title -->
 
-            <!-- Contact Form -->
-            <div class="col-lg-8">
-              <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200"
-                onsubmit="sendEmail(event)">
+            <div class="container" data-aos="fade" data-aos-delay="100">
                 <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-  
-                  <div class="col-md-6">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required="">
-                  </div>
-  
-                  <div class="col-md-12">
-                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required="">
-                  </div>
-  
-                  <div class="col-md-12">
-                    <textarea name="message" id="message" class="form-control" rows="6" placeholder="Message"
-                      required=""></textarea>
-                  </div>
-  
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-  
-                    <button type="submit">Send Message</button>
-                  </div>
+                    <!-- Address, Phone, and Email Info -->
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <!-- Address Icon with Tooltip -->
+                            <a
+                                href="https://www.google.com/maps/place/Vishrambag,+Sangli,+Maharashtra/data=!4m2!3m1!1s0x3bc122816730d721:0x988d8a633d7e420f?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI0LjQ5LjgYACCenQoqfiw5NDIzMTc5OSw5NDI0MjU4Niw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyODIwNCw5NDIyOTgzOSw0NzA4NDM5Myw5NDIxMzIwMEICSU4%3D">
+                                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            </a>
+                            <div>
+                                <h3>Address</h3>
+                                <p>Sahyadrinagar near Datta Temple</p>
+                                <p>Vishrambag Sangli, Maharashtra</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <!-- Phone Icon with Tooltip -->
+                            <a href="tel:91+9226828540" title="Click to call us">
+                                <i class="bi bi-telephone flex-shrink-0"></i>
+                            </a>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>91+9226828540</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <!-- Email Icon with Tooltip -->
+                            <a href="mailto:nimbusimpreesa@gmail.com" title="Click to email us">
+                                <i class="bi bi-envelope flex-shrink-0"></i>
+                            </a>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>nimbusimpreesa@gmail.com</p>
+                            </div>
+                        </div><!-- End Info Item -->
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="col-lg-8">
+                        <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200"
+                            onsubmit="sendEmail(event)">
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" id="name" class="form-control"
+                                        placeholder="Your Name" required="">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Your Email" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" name="subject" id="subject" class="form-control"
+                                        placeholder="Subject" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea name="message" id="message" class="form-control" rows="6"
+                                        placeholder="Message" required=""></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- End Contact Form -->
                 </div>
-              </form>
-            </div><!-- End Contact Form -->
-          </div>
-        </div>
-      </section>
-  <!-- /Contact Section -->
+            </div>
+        </section>
+        <!-- /Contact Section -->
     </main>
-    
 
-  <footer id="footer" class="footer dark-background">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center" style="color: white;"
-            onmouseover="this.querySelector('.sitename').style.color='var(--accent-color)';"
-            onmouseout="this.querySelector('.sitename').style.color='white';">
-            <span class="sitename" style="color: inherit;">Nimbus Impreesa</span>
-          </a>
-  
-          <div class="footer-contact pt-3">
-            <!-- Tricolor text for Bharat, Maharashtra -->
-            <P>India, Maharashtra | <span class="tricolor-text">भारत, महाराष्ट्र</span></P>
-            <p>Sahyadrinagar near Datta Temple</p>
-            <p>Vishrambag Sangli, Maharashtra, 416416</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+91 9226828540</span></p>
-            <p><strong>Email:</strong> <span>nimbusimpreesa@gmail.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href="https://www.facebook.com/people/Nimbus-Impreesa/61569728054825/?_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/_nimbusimpreesa007?igsh=c250aXNqN29hYnZj" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/919226828540" target="_blank"><i class="bi bi-whatsapp"></i></a> <!-- WhatsApp link added -->
-            <a href="https://www.linkedin.com/in/nimbus-impreesa-b323b3340/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          </div>
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center" style="color: white;"
+                        onmouseover="this.querySelector('.sitename').style.color='var(--accent-color)';"
+                        onmouseout="this.querySelector('.sitename').style.color='white';">
+                        <span class="sitename" style="color: inherit;">Nimbus Impreesa</span>
+                    </a>
+
+                    <div class="footer-contact pt-3">
+                        <!-- Tricolor text for Bharat, Maharashtra -->
+                        <P>India, Maharashtra | <span class="tricolor-text">भारत, महाराष्ट्र</span></P>
+                        <p>Sahyadrinagar near Datta Temple</p>
+                        <p>Vishrambag Sangli, Maharashtra, 416416</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+91 9226828540</span></p>
+                        <p><strong>Email:</strong> <span>nimbusimpreesa@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://www.facebook.com/people/Nimbus-Impreesa/61569728054825/?_rdr"
+                            target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/_nimbusimpreesa007?igsh=c250aXNqN29hYnZj" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/919226828540" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <!-- WhatsApp link added -->
+                        <a href="https://www.linkedin.com/in/nimbus-impreesa-b323b3340/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4>Join Our Nimbus Impreesa Business Newsletter</h4>
+                    <p>Stay updated with the latest business trends, special updates, and exclusive offers. Join our
+                        WhatsApp group today!</p>
+
+                    <!-- Join WhatsApp Button -->
+                    <a href="https://wa.me/919226828540" target="_blank" class="btn btn-success d-block mt-3">Join
+                        WhatsApp Group</a>
+
+                    <p class="mt-2" style="font-size: 14px; color: grey;">Connect and grow with valuable insights!</p>
+                </div>
+            </div>
         </div>
-  
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="index.html#services">Services</a></li>
-          </ul>
+
+        <div class="container copyright text-center mt-4">
+            <span>@ 2025</span> <strong class="px-1 sitename">Nimbus Impreesa</strong> <span>All Rights Reserved.</span>
+
+            <div class="credits">
+            </div>
         </div>
-  
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="index.html#products">Products</a></li>
-            <li><a href="index.html#services">Services</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-            <h4>Join Our Nimbus Impreesa Business Newsletter</h4>
-            <p>Stay updated with the latest business trends, special updates, and exclusive offers. Join our WhatsApp group today!</p>
-            
-            <!-- Join WhatsApp Button -->
-            <a href="https://wa.me/919226828540" target="_blank" class="btn btn-success d-block mt-3">Join WhatsApp Group</a>
-            
-            <p class="mt-2" style="font-size: 14px; color: grey;">Connect and grow with valuable insights!</p>
-          </div>          
-      </div>
-    </div>
-  
-    <div class="container copyright text-center mt-4">
-      <span>@ 2025</span> <strong class="px-1 sitename">Nimbus Impreesa</strong> <span>All Rights Reserved.</span>
-  
-      <div class="credits">
-      </div>
-    </div>
-  
-  </footer>
-  
+
+    </footer>
+
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
